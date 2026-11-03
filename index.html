@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Insights | Samuel Ceballos P.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Iconos profesionales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Encabezado y Menú -->
+    <header>
+        <nav>
+            <div class="logo">Data Science Insights</div>
+            <div class="language-selector">
+                <a href="#" class="lang-btn active">🇪🇸 ES</a>
+                <a href="#" class="lang-btn">🇬🇧 EN</a>
+                <a href="#" class="lang-btn">🇧🇷 PT</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <!-- Tu foto irá aquí cuando la subamos -->
+            <img src="foto-perfil.jpg" alt="Sara Rodriguez - Científico de Datos" class="profile-photo">
+            
+            <!-- Sello de Credibilidad MIT -->
+            <div class="mit-badge">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Formación Avanzada en Estadística y Ciencia de Datos | MITx</span>
+            </div>
+            
+            <h1>Transformo Datos en Decisiones</h1>
+            <p>Científico de Datos especializado en investigación de mercados, estadística aplicada y análisis de encuestas en Venezuela.</p>
+            
+            <!-- Botón de WhatsApp (Recuerda cambiar el número luego) -->
+            <a href="https://wa.me/584123456789" class="btn-primary" target="_blank">
+                <i class="fab fa-whatsapp"></i> Solicitar Asesoría
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Mis Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio-card">
+                <i class="fas fa-chart-pie icon"></i>
+                <h3>Análisis de Encuestas</h3>
+                <p>Diseño de instrumentos, muestreo estadístico, Análisis de Correspondencia Múltiple (MCA) y estimadores bayesianos.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fas fa-seedling icon"></i>
+                <h3>Riesgo Actuarial y Cartera Agrícola</h3>
+                <p>Modelado predictivo para cultivos, análisis de pendientes de terreno, estimación de rendimientos y optimización de recursos.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fas fa-flask icon"></i>
+                <h3>Diseño y Análisis de Experimentos</h3>
+                <p>ANOVA, regresión logística, gradient descent y validación de hipótesis con rigor estadístico académico.</p>
+            </div>
+            <div class="servicio-card">
+                <i class="fas fa-users icon"></i>
+                <h3>Estudios en Ciencias Sociales</h3>
+                <p>Investigación aplicada a transporte público, salud, ventas, consumo mediático y comportamiento del consumidor.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Portafolio -->
+    <section id="portafolio" class="portafolio">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyectos">
+            <div class="proyecto">
+                <h3>📻 Consumo de Radio en el Estado Lara (2026)</h3>
+                <p><strong>Metodología:</strong> Muestreo de 500 encuestas, Análisis de Correspondencia Múltiple (MCA).</p>
+                <p><strong>Hallazgos:</strong> Segmentación por edad, género, ocupación y momento del día en Barquisimeto y Cabudare.</p>
+            </div>
+            <div class="proyecto">
+                <h3>🧅 Análisis de Riesgo en Cultivo de Cebolla (Boconó)</h3>
+                <p><strong>Metodología:</strong> Regresión bayesiana con priors informativos, análisis de pendientes de terreno.</p>
+                <p><strong>Hallazgos:</strong> Deficiencias de estimadores en pendientes inclinadas y recomendaciones de priors locales.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Trabajemos Juntos</h2>
+        <div class="contacto-info">
+            <p>¿Necesitas análisis estadístico para tu investigación o negocio?</p>
+            <p><strong>Métodos de pago disponibles:</strong></p>
+            <ul>
+                <li>✅ Pago Móvil (Venezuela)</li>
+                <li>✅ Zelle / Transferencia Internacional</li>
+                <li>✅ Binance USDT</li>
+                <li>✅ Efectivo (Barquisimeto)</li>
+            </ul>
+            <a href="https://wa.me/584123456789" class="btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+        </div>
+    </section>
+
+    <!-- Pie de página con Contador de Visitas -->
+    <footer>
+        <div class="visitor-counter">
+            <p><i class="fas fa-eye"></i> Visitas Globales:</p>
+            <span id="visitor-count">Cargando...</span>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem; opacity: 0.8;">🌍 Conectando datos desde Venezuela al mundo</p>
+        </div>
+        <p>&copy; 2026 Data Science Insights | Sara Rodriguez</p>
+        <p><a href="https://linkedin.com/in/tu-perfil" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p>
+    </footer>
+
+    <!-- Script para el Contador de Visitas -->
+    <script>
+        fetch('https://api.countapi.xyz/hit/DataScienceInsightsSara/visits')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('visitor-count').textContent = data.value.toLocaleString();
+            })
+            .catch(error => {
+                document.getElementById('visitor-count').textContent = '100+';
+            });
+    </script>
+</body>
+</html>
